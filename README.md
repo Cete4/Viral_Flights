@@ -1,29 +1,52 @@
-# Create React Express App
+[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
-## About This Boilerplate
+# Viral Flights
+Description
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+**First Presentation**: `2020 December 09`
+<br>
+Heroku: https://viralflights.herokuapp.com/
+<br>
+Repository: https://github.com/Cete4/Viral_Flights
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+## Table of Contents
+* [Usage](#usage)
+* [Installation](#installation)
+* [Credits & Thank You](#credits)
+* [Testing](#testing)
+* [License](#license)
 
-## Starting the app locally
+# Development
+## Team Members
+* Micah BigEagle
+* Ray Gordon
+* Charline Lach
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+## Usage Instructions
+To utilize this website/application, end users may access it via the [Heroku link](https://viralflights.herokuapp.com/). 
+<br>
 
-```
-npm install
-```
+<!-- ![GIF](./public/images/budgetGIF.gif)
+<br>
 
-This should install node modules within the server and the client folder.
+![Login](./public/images/login.png)
+<br>
 
-After both installations complete, run the following command in your terminal:
+![Home Page](./public/images/home_budget1.png)
+<br>
 
-```
-npm start
-```
+![Detail Page](./public/images/detail1.png)
+<br> -->
 
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+## Installation Instructions
+N/A
 
-## Deployment (Heroku)
+## Testing
 
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+
+## Credits & Thank Yous
+<!-- Thank you to our Instructor, TAs, and classmates! -->
+
+# License Information
+MIT License
+Copyright © 2020
