@@ -12,7 +12,7 @@ function BookCard(props) {
                 <Card.Text></Card.Text>
                 <Card.Text></Card.Text>
                 <Card.Text></Card.Text>
-                <Card.Text>{props.description}</Card.Text>
+                <Card.Text></Card.Text>
             </Card.Body>
         </Card>
     )
