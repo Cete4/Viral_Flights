@@ -20,6 +20,7 @@ class Home extends Component {
                     <Row>
                         <Col size="md-12">
                             <h1 id="hotflights">Hot Flights</h1>
+                            <FlightsCard />
                         </Col>
                     </Row>
                 </Container >
