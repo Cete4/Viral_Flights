@@ -36,7 +36,7 @@ To utilize this website/application, end users may access it via the [Heroku lin
 Axios: npm i axios
 Bootstrap: npm i bootstrap
 Express: npm i express
-React Date Picker: npm install react-datepicker --save
+Google Flight Date Picker: npm i react-google-flight-datepicker
 ```
 
 ## Testing
