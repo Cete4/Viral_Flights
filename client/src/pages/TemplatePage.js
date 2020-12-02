@@ -5,7 +5,7 @@ import { Col, Row, Container } from "../components/Grid";
 import Navbar from "../components/Navbar";
 import FlightsCard from "../components/FlightsCard";
 
-class Home extends Component {
+class TemplatePage extends Component {
 
 
     render() {
@@ -27,4 +27,4 @@ class Home extends Component {
         );
     }
 }
-export default TemplatePate;
+export default TemplatePage;

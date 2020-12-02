@@ -27,4 +27,4 @@ class Home extends Component {
         );
     }
 }
-export default TemplatePate;
+export default Home;
