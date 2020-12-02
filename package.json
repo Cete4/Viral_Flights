@@ -24,6 +24,10 @@
     "bootstrap": "^4.5.3",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
+<<<<<<< HEAD
+    "react-google-flight-datepicker": "^0.1.17"
+=======
     "react-bootstrap": "^1.4.0"
+>>>>>>> 72e467b24a803caf3af0f2ec48899046b4a88fa2
   }
 }
