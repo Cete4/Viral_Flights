@@ -8,11 +8,9 @@ function BookCard(props) {
             {/* TODO: Add images of the destination if possible */}
             {/* <Card.Img variant="left" src={props.src} /> */}
             <Card.Body>
-                <Card.Title></Card.Title>
-                <Card.Text></Card.Text>
-                <Card.Text></Card.Text>
-                <Card.Text></Card.Text>
-                <Card.Text></Card.Text>
+                <Card.Title>Destination: {props.destination}</Card.Title>
+                <Card.Text id="user">{props.user}</Card.Text>
+                <Card.Text>{props.synopsis}</Card.Text>
             </Card.Body>
         </Card>
     )
