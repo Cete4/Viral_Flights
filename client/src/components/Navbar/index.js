@@ -4,7 +4,7 @@ import { Navbar, Nav, Button, Form, FormControl } from 'react-bootstrap';
 function Nav() {
     return (
         <>
-            <Navbar>
+            <Navbar expand="lg">
                 <Navbar.Brand href="/">Viral Flights</Navbar.Brand>
                 <Nav className="mr-auto">
                     <Nav.Link href="Flights">Flights</Nav.Link>
