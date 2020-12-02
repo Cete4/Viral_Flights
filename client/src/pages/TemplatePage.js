@@ -6,8 +6,23 @@ import { Col, Row, Container } from "../components/Grid";
 import BookCard from "../components/BookCard";
 import Search from "../components/Search";
 
-class TemplatePage extends Component {
+class Home extends Component {
 
+    
+    render() {
+        return (
+            <div>
+                <Container>
+                    <Row>
+                        <Col size="md-12">
+
+
+
+                        </Col>
+                    </Row>
+                </Container >
+            </div >
+        );
+    }
 }
-
-export default TemplatePage;
+export default TemplatePate;
