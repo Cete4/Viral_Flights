@@ -26,20 +26,18 @@ Repository: https://github.com/Cete4/Viral_Flights
 To utilize this website/application, end users may access it via the [Heroku link](https://viralflights.herokuapp.com/). 
 <br>
 
-<!-- ![GIF](./public/images/budgetGIF.gif)
+<!-- ![GIF](.gif)
 <br>
 
-![Login](./public/images/login.png)
-<br>
-
-![Home Page](./public/images/home_budget1.png)
-<br>
-
-![Detail Page](./public/images/detail1.png)
 <br> -->
 
-## Installation Instructions
-N/A
+## Installation
+```
+Axios: npm i axios
+Bootstrap: npm i bootstrap
+Express: npm i express
+React Date Picker: npm install react-datepicker --save
+```
 
 ## Testing
 

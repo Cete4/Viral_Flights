@@ -1,6 +1,7 @@
 import React from "react";
+import { RangeDatePicker } from 'react-google-flight-datepicker`;
 
-function Form(props) {
+function SearchForm(props) {
     return (
         <div className="container">
             <form>
@@ -15,6 +16,22 @@ function Form(props) {
                         placeholder="Search for a Flight"
                         id="search"
                     />
+
+                    <RangeDatePicker
+                        startDate={new Date()}
+                        endDate={new Date()}
+                        onChange={(startDate, endDate) => onDateChange(startDate, endDate)}
+                        minDate={new Date(1900, 0, 1)}
+                        maxDate={new Date(2100, 0, 1)}
+                        dateFormat="D"
+                        monthFormat="MMM YYYY"
+                        startDatePlaceholder="Start Date"
+                        endDatePlaceholder="End Date"
+                        disabled={false}
+                        className="my-own-class-name"
+                        startWeekDay="monday"
+                    />
+
                     <button onClick={props.handleFormSubmit} type="button" className="btn btn-light">
                         Search
                     </button>
@@ -24,4 +41,4 @@ function Form(props) {
     );
 }
 
-export default Form;
+export default SearchForm;
