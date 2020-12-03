@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Button, Form, FormControl } from 'react-bootstrap';
 
-function Nav() {
+function SiteNav() {
     return (
         <>
             <Navbar expand="lg">
@@ -20,4 +20,4 @@ function Nav() {
     );
 }
 
-export default Nav;
+export default SiteNav;
