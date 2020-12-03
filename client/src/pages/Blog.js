@@ -3,7 +3,7 @@ import { Component } from "react";
 import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
 
-class CoronaTravelNews extends Component {
+class Blog extends Component {
 
 
     render() {
@@ -25,4 +25,4 @@ class CoronaTravelNews extends Component {
         );
     }
 }
-export default CoronaTravelNews;
+export default Blog;
