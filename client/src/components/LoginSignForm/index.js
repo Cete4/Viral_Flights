@@ -1,5 +1,4 @@
-import React, { Switch } from "react";
-
+import React from "react";
 
 let Parent = React.createClass({
     getInitialState: function () {
@@ -12,7 +11,6 @@ let Parent = React.createClass({
         return this.setState({ login: login, signup: signup })
     },
     render: function () {
-
         let self = this;
         return (
             <div>
@@ -23,82 +21,80 @@ let Parent = React.createClass({
 
                 {self.state.login ? <Login /> : null}
                 {self.state.signup ? <Signup /> : null}
-
             </div>
         )
     }
 })
 
 
-let Signup = React.createClass({
-    render: function () {
-        return (
-            <div>
-                <div id="signup">
-                    <input
-                        type="text"
-                        id="first"
-                        placeholder="First Name"
-                        onChange={props.handleInputChange}
-                        value={props.first}
-                    />
-                    <input
-                        type="text"
-                        id="last"
-                        placeholder="Last Name"
-                        onChange={props.handleInputChange}
-                        value={props.last}
-                    />
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Email"
-                        onChange={props.handleInputChange}
-                        value={props.email}
-                    />
-                    <input type="password"
-                        id="password"
-                        placeholder="Password"
-                        onChange={props.handleInputChange}
-                        value={props.password}
-                    />
-                    <input type="password"
-                        id="confirm"
-                        placeholder="Confirm Password"
-                        onChange={props.handleInputChange}
-                        value={props.password}
-                    />
-                    <button id="signup">Sign Up</button>
-                </div>
+function SignUp(props) {
+    return (
+        <div>
+            <div id="signup">
+                <input
+                    type="text"
+                    id="first"
+                    placeholder="First Name"
+                    onChange={props.handleInputChange}
+                    value={props.first}
+                />
+                <input
+                    type="text"
+                    id="last"
+                    placeholder="Last Name"
+                    onChange={props.handleInputChange}
+                    value={props.last}
+                />
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                    onChange={props.handleInputChange}
+                    value={props.email}
+                />
+                <input type="password"
+                    id="password"
+                    placeholder="Password"
+                    onChange={props.handleInputChange}
+                    value={props.password}
+                />
+                <input type="password"
+                    id="confirm"
+                    placeholder="Confirm Password"
+                    onChange={props.handleInputChange}
+                    value={props.password}
+                />
+                <button id="signup">Sign Up</button>
             </div>
-        )
-    }
-})
+        </div>
+    )
+}
 
-let Login = React.createClass({
-    render: function () {
-        return (
-            <div>
-                <div id="login">
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Email"
-                        onChange={props.handleInputChange}
-                        value={props.email}
-                    />
-                    <input
-                        type="password"
-                        id="password"
-                        placeholder="Password"
-                        onChange={props.handleInputChange}
-                        value={props.password}
-                    />
-                    <button id="login">Login</button>
-                </div>
+function Login(props) {
+    return (
+        <div>
+            <div id="login">
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                    onChange={props.handleInputChange}
+                    value={props.email}
+                />
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    onChange={props.handleInputChange}
+                    value={props.password}
+                />
+                <button id="login">Login</button>
             </div>
-        )
-    }
-})
+        </div>
+    )
+}
 
 ReactDOM.render(<Parent />, document.getElementById("space"))
+
+export default SignUp;
+export default Login;

@@ -10,6 +10,7 @@ function SiteNav() {
                     <Nav.Link href="Flights">Flights</Nav.Link>
                     <Nav.Link href="CoronaTravelNews">Corona Travel News</Nav.Link>
                     <Nav.Link href="Blog">Blog</Nav.Link>
+                    <Nav.Link href="LoginSignUp">Login or Sign Up</Nav.Link>
                 </Nav>
                 <Form inline>
                     <FormControl type="text" placeholder="Search for Flights" className="mr-sm-2" />
