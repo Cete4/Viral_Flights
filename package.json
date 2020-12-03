@@ -22,12 +22,6 @@
   "dependencies": {
     "axios": "^0.21.0",
     "express": "^4.16.3",
-<<<<<<< HEAD
     "if-env": "^1.0.4"
-=======
-    "if-env": "^1.0.4",
-    "react-google-flight-datepicker": "^0.1.17",
-    "react-bootstrap": "^1.4.0"
->>>>>>> 0121fd2c31c154c66c5cc860834eba9a0954fe94
   }
 }
