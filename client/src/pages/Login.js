@@ -19,7 +19,7 @@ class Login extends Component {
                     </Row>
                     <Row>
                         <Col size="md-12">
-
+                            <LoginSignUpForm />
                         </Col>
                     </Row>
                 </Container >

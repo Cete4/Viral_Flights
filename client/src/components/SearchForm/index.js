@@ -1,5 +1,5 @@
 import React from "react";
-import { RangeDatePicker } from 'react-google-flight-datepicker`;
+import { RangeDatePicker } from "react-google-flight-datepicker";
 
 function SearchForm(props) {
     return (
