@@ -2,9 +2,9 @@ import React from "react";
 import { Component } from "react";
 // import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
-import Navbar from "../components/Navbar";
+import SiteNav from "../components/SiteNav";
 // import FlightsCard from "../components/FlightsCard";
-import LoginSignForm from "./containers/LoginSignForm";
+// import LoginSignForm from "../components/LoginSignForm";
 
 class Login extends Component {
 
@@ -14,7 +14,7 @@ class Login extends Component {
                 <Container>
                     <Row>
                         <Col size="md-12">
-                            <Navbar />
+                            <SiteNav />
                         </Col>
                     </Row>
                     <Row>
