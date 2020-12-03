@@ -10,15 +10,14 @@ function SiteNav() {
                     <Nav.Link href="Flights">Flights</Nav.Link>
                     <Nav.Link href="CoronaTravelNews">Corona Travel News</Nav.Link>
                     <Nav.Link href="Blog">Blog</Nav.Link>
-                    <Nav.Link href="LoginSignUp">Login or Sign Up</Nav.Link>
                 </Nav>
                 <Form inline>
                     <FormControl type="text" placeholder="Search for Flights" className="mr-sm-2" />
                     <Button variant="outline-info">Search</Button>
                 </Form>
-                <Button variant="outline-info" href="LoginSignUp">Login</Button>
+                <Button variant="outline-info" href="Login">Login</Button>
                 <br></br>
-                <Button variant="outline-info" href="LoginSignUp">Signup</Button>
+                <Button variant="outline-info" href="SignUp">Signup</Button>
             </Navbar>
         </>
     );
