@@ -1,23 +1,19 @@
-import { Tab } from "bootstrap";
 import React, { Switch } from "react";
-import { Component } from "react";
-import Button from "react-bootstrap/Button";
-import { Col, Row, Container } from "../components/Grid";
 
 
-var Parent = React.createClass({
+let Parent = React.createClass({
     getInitialState: function () {
         return { signup: false, login: true }
     },
     switch: function (word) {
-        var signup, login;
+        let signup, login;
         if (word == "signup") { signup = true; login = false; }
         else { login = true; signup = false; }
         return this.setState({ login: login, signup: signup })
     },
     render: function () {
 
-        var self = this;
+        let self = this;
         return (
             <div>
                 <div id="buttons">
@@ -34,31 +30,71 @@ var Parent = React.createClass({
 })
 
 
-var Signup = React.createClass({
+let Signup = React.createClass({
     render: function () {
         return (
             <div>
                 <div id="signup">
-                    <input type="text" id="first" placeholder="First Name" />
-                    <input type="text" id="last" placeholder="Last Name" />
-                    <input type="email" id="email" placeholder="Email" />
-                    <input type="password" id="password" placeholder="Password" />
-                    <input type="password" id="confirm" placeholder="Confirm Password" />
-                    <button id="send">Send</button>
+                    <input
+                        type="text"
+                        id="first"
+                        placeholder="First Name"
+                        onChange={props.handleInputChange}
+                        value={props.first}
+                    />
+                    <input
+                        type="text"
+                        id="last"
+                        placeholder="Last Name"
+                        onChange={props.handleInputChange}
+                        value={props.last}
+                    />
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email"
+                        onChange={props.handleInputChange}
+                        value={props.email}
+                    />
+                    <input type="password"
+                        id="password"
+                        placeholder="Password"
+                        onChange={props.handleInputChange}
+                        value={props.password}
+                    />
+                    <input type="password"
+                        id="confirm"
+                        placeholder="Confirm Password"
+                        onChange={props.handleInputChange}
+                        value={props.password}
+                    />
+                    <button id="signup">Sign Up</button>
                 </div>
             </div>
         )
     }
 })
 
-var Login = React.createClass({
+let Login = React.createClass({
     render: function () {
         return (
             <div>
                 <div id="login">
-                    <input type="email" id="email" placeholder="Email" />
-                    <input type="password" id="password" placeholder="Password" />
-                    <button id="send">Send</button>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email"
+                        onChange={props.handleInputChange}
+                        value={props.email}
+                    />
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Password"
+                        onChange={props.handleInputChange}
+                        value={props.password}
+                    />
+                    <button id="login">Login</button>
                 </div>
             </div>
         )

@@ -4,7 +4,7 @@ import { Component } from "react";
 import { Col, Row, Container } from "../components/Grid";
 import Navbar from "../components/Navbar";
 // import FlightsCard from "../components/FlightsCard";
-import Login from "./containers/Login";
+import LoginSignForm from "./containers/LoginSignForm";
 
 class Login extends Component {
 
@@ -19,7 +19,7 @@ class Login extends Component {
                     </Row>
                     <Row>
                         <Col size="md-12">
-                            <LoginSignUpForm />
+                            <LoginSignForm />
                         </Col>
                     </Row>
                 </Container >
