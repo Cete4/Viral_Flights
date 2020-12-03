@@ -16,6 +16,9 @@ function SiteNav() {
                     <FormControl type="text" placeholder="Search for Flights" className="mr-sm-2" />
                     <Button variant="outline-info">Search</Button>
                 </Form>
+                <Button variant="outline-info" href="LoginSignUp">Login</Button>
+                <br></br>
+                <Button variant="outline-info" href="LoginSignUp">Signup</Button>
             </Navbar>
         </>
     );

@@ -2,9 +2,8 @@ import React from "react";
 import { Component } from "react";
 import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
-import FlightsCard from "../components/FlightsCard";
 
-class TemplatePage extends Component {
+class Blog extends Component {
 
 
     render() {
@@ -26,4 +25,4 @@ class TemplatePage extends Component {
         );
     }
 }
-export default TemplatePage;
+export default Blog;

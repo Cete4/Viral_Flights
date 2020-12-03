@@ -4,7 +4,7 @@ import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
 import FlightsCard from "../components/FlightsCard";
 
-class TemplatePage extends Component {
+class Flights extends Component {
 
 
     render() {
@@ -26,4 +26,4 @@ class TemplatePage extends Component {
         );
     }
 }
-export default TemplatePage;
+export default Flights;
