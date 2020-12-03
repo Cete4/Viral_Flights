@@ -2,10 +2,10 @@ import React from "react";
 import { Component } from "react";
 import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
-import BlogPostForm from "../components/BlogPostForm";
-import BlogPostList from "../components/BlogPostList";
+import BlogPostDetail from "../components/BlogPostDetail";
 
-class Blog extends Component {
+class TemplatePage extends Component {
+
 
     render() {
         return (
@@ -17,11 +17,8 @@ class Blog extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col size="md-6">
-                            <BlogPostForm />
-                        </Col>
-                        <Col size="md-6 sm-12">
-                            <BlogPostList />
+                        <Col size="md-12">
+                            <BlogPostDetail />
                         </Col>
                     </Row>
                 </Container >
@@ -29,4 +26,4 @@ class Blog extends Component {
         );
     }
 }
-export default Blog;
+export default TemplatePage;

@@ -1,7 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
 # Viral Flights
-Description
+<!-- Description -->
 
 **First Presentation**: `2020 December 09`
 <br>

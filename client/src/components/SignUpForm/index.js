@@ -42,7 +42,11 @@ function SignUpForm(props) {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </Form.Group> */}
-                <Button href="Home" block size="lg" type="submit" disabled={!validateForm()}>
+                <Button
+                    href="Home"
+                    block size="lg"
+                    type="submit"
+                    disabled={!validateForm()}>
                     Sign Up
                 </Button>
             </Form>
