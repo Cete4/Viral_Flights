@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-// import "./style.css";
 
-function LoginForm() {
+function SignUpForm(props) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -23,7 +22,7 @@ function LoginForm() {
                     <Form.Control
                         autoFocus
                         type="email"
-                        value={email}
+                        value={props.email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </Form.Group>
@@ -31,7 +30,15 @@ function LoginForm() {
                     <Form.Label>Password</Form.Label>
                     <Form.Control
                         type="password"
-                        value={password}
+                        value={props.password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                </Form.Group>
+                <Form.Group size="lg" controlId="password">
+                    <Form.Label>Confirm Password</Form.Label>
+                    <Form.Control
+                        type="password"
+                        value={props.password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </Form.Group>
@@ -41,6 +48,7 @@ function LoginForm() {
             </Form>
         </div>
     );
+
 }
 
-export default LoginForm;
+export default SignUpForm;
