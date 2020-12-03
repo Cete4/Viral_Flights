@@ -1,12 +1,11 @@
 import React from "react";
 import { Component } from "react";
-// import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
-// import FlightsCard from "../components/FlightsCard";
-// import LoginSignForm from "../components/LoginSignForm";
+import FlightsCard from "../components/FlightsCard";
+import SignUpForm from "../components/SignUpForm";
 
-class Login extends Component {
+class SignUp extends Component {
 
     render() {
         return (
@@ -19,7 +18,7 @@ class Login extends Component {
                     </Row>
                     <Row>
                         <Col size="md-12">
-                            <LoginSignForm />
+                            <SignUpForm />
                         </Col>
                     </Row>
                 </Container >
@@ -27,5 +26,4 @@ class Login extends Component {
         );
     }
 }
-
-export default Login;
+export default SignUp;
