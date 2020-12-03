@@ -2,23 +2,12 @@ import React from "react";
 import { Component } from "react";
 import API from "../utils/flightAPI";
 import { Col, Row, Container } from "../components/Grid";
-import Navbar from "../components/SiteNav";
+import SiteNav from "../components/SiteNav";
 import FlightsCard from "../components/FlightsCard";
 
 class Home extends Component {
 
-    search = query => {
-        API.get(query)
-            .then(res =>
-                this.setState(
-                    {
-                        flights: res.data.items,
-                        search: ""
-                    },
-                    console.log(res.data.items)
-                ))
-            .catch(err => console.log(err));
-    };
+
 
     render() {
         return (
@@ -26,7 +15,7 @@ class Home extends Component {
                 <Container>
                     <Row>
                         <Col size="md-12">
-                            <Navbar />
+                            <SiteNav />
                         </Col>
                     </Row>
                     <Row>
