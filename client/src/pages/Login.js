@@ -4,11 +4,7 @@ import { Component } from "react";
 import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
 // import FlightsCard from "../components/FlightsCard";
-<<<<<<< HEAD:client/src/pages/LoginSignUp.js
-// import LoginSignForm from "../components/LoginSignForm";
-=======
 import LoginForm from "../components/LoginForm";
->>>>>>> 5e4bb31c68c56231d98a11eb42f5a8604aad0a6e:client/src/pages/Login.js
 
 class Login extends Component {
 
