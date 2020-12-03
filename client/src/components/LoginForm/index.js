@@ -35,7 +35,11 @@ function LoginForm() {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </Form.Group>
-                <Button block size="lg" type="submit" disabled={!validateForm()}>
+                <Button
+                    href="Home"
+                    block size="lg"
+                    type="submit"
+                    disabled={!validateForm()}>
                     Login
                 </Button>
             </Form>
