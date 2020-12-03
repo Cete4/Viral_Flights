@@ -7,6 +7,18 @@ import FlightsCard from "../components/FlightsCard";
 
 class Home extends Component {
 
+    search = query => {
+        API.get(query)
+            .then(res =>
+                this.setState(
+                    {
+                        flights: res.data.items,
+                        search: ""
+                    },
+                    console.log(res.data.items)
+                ))
+            .catch(err => console.log(err));
+    };
 
     render() {
         return (
