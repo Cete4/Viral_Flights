@@ -4,7 +4,8 @@ import Home from './pages/Home'; // import our pages
 import Flights from './pages/Flights'; // import our pages 
 import CoronaTravelNews from './pages/CoronaTravelNews'; // import our pages 
 import Blog from './pages/Blog'; // import our pages 
-import LoginSignUp from './pages/LoginSignUp'; // import our pages 
+import Login from './pages/Login'; // import our pages 
+import SignUp from './pages/SignUp'; // import our pages 
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
           <Route exact path='/Flights' component={Flights} />
           <Route exact path='/CoronaTravelNews' component={CoronaTravelNews} />
           <Route exact path='/Blog' component={Blog} />
-          <Route exact path='/LoginSignUp' component={LoginSignUp} />
+          <Route exact path='/Login' component={Login} />
+          <Route exact path='/SignUp' component={SignUp} />
         </Switch>
       </Router>
     </div>
