@@ -1,8 +1,7 @@
 import React from "react";
 import { Component } from "react";
-import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
-import Navbar from "../components/Navbar";
+import SiteNav from "../components/SiteNav";
 import FlightsCard from "../components/FlightsCard";
 
 class TemplatePage extends Component {
@@ -14,7 +13,7 @@ class TemplatePage extends Component {
                 <Container>
                     <Row>
                         <Col size="md-12">
-                            <Navbar />
+                            <SiteNav />
                         </Col>
                     </Row>
                     <Row>
