@@ -5,7 +5,6 @@ import Flights from './pages/Flights'; // import our pages
 import CoronaTravelNews from './pages/CoronaTravelNews'; // import our pages 
 import Blog from './pages/Blog'; // import our pages
 import BlogPostDetail from './pages/BlogPostDetail'; // import our pages
-// import { StoreProvider } from "./utils/GlobalState";
 import Login from './pages/Login'; // import our pages 
 import SignUp from './pages/SignUp'; // import our pages 
 
