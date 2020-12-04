@@ -3,6 +3,7 @@ const path = require("path");
 const routes = require("./routes");
 const PORT = process.env.PORT || 3001;
 const app = express();
+const mongoose = require("mongoose");
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -10,6 +11,17 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.use(routes);
+
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/blog',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+);
+
 // Send every request to the React app
 // Define any API routes before this runs
 app.get("*", function(req, res) {
