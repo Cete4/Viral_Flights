@@ -6,7 +6,7 @@ import SiteNav from "../components/SiteNav";
 import FlightsCard from "../components/FlightsCard";
 
 class Home extends Component {
-
+  
 
 
     render() {
