@@ -34,21 +34,24 @@ function SignUpForm(props) {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </Form.Group>
-                <Form.Group size="lg" controlId="password">
+                {/* <Form.Group size="lg" controlId="password">
                     <Form.Label>Confirm Password</Form.Label>
                     <Form.Control
                         type="password"
                         value={props.password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
-                </Form.Group>
-                <Button block size="lg" type="submit" disabled={!validateForm()}>
-                    Login
+                </Form.Group> */}
+                <Button
+                    href="Home"
+                    block size="lg"
+                    type="submit"
+                    disabled={!validateForm()}>
+                    Sign Up
                 </Button>
             </Form>
         </div>
     );
-
 }
 
 export default SignUpForm;
