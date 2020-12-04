@@ -1,16 +1,18 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Jumbotron from "../components/Jumbotron";
-import { Col, Row, Container } from "../components/Grid";
+import React, { useEffect } from "react";
+import { Col, Row, Container } from "../Grid";
+import Jumbotron from "../Jumbotron";
 
-function Detail(props) {
+function BlogPostDetail(props) {
+
     return (
-        <>{/* Replace `true` with the state of your application */}{true ? (
+        <>{state.currentPost ? (
             <Container fluid>
                 <Row>
                     <Col size="md-12">
                         <Jumbotron>
-                            <h1>TITLE in LOCATION by AUTHOR</h1>
+                            <h1>
+                                {state.currentPost.title} in {state.currentPost.location}
+                            </h1>
                         </Jumbotron>
                     </Col>
                 </Row>
@@ -18,13 +20,8 @@ function Detail(props) {
                     <Col size="md-10 md-offset-1">
                         <article>
                             <h1>Content:</h1>
-                            <p>BODY</p>
+                            <p>{state.currentPost.body}</p>
                         </article>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col size="md-2">
-                        <Link to="/Blog">← Back to Posts</Link>
                     </Col>
                 </Row>
             </Container>
@@ -32,6 +29,6 @@ function Detail(props) {
                 <div>loading...</div>
             )}</>
     );
-}
+};
 
-export default Detail;
+export default BlogPostDetail;
