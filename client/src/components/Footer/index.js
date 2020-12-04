@@ -13,7 +13,7 @@ const FooterPagePro = () => {
                     </MDBCol>
                     <MDBCol md="2" className="b-3">
                         <h6 className="title font-weight-bold">
-                            <a href="#!">Products</a>
+                            <a href="#!">Github</a>
                         </h6>
                     </MDBCol>
                     <MDBCol md="2" className="b-3">
@@ -50,19 +50,8 @@ const FooterPagePro = () => {
                             <a className="tw-ic">
                                 <i className="fab fa-twitter fa-lg white-text mr-md-4"> </i>
                             </a>
-                            <a className="gplus-ic">
-                                <i className="fab fa-google-plus-g fa-lg white-text mr-md-4">
-
-                                </i>
-                            </a>
                             <a className="li-ic">
                                 <i className="fab fa-linkedin-in fa-lg white-text mr-md-4"> </i>
-                            </a>
-                            <a className="ins-ic">
-                                <i className="fab fa-instagram fa-lg white-text mr-md-4"> </i>
-                            </a>
-                            <a className="pin-ic">
-                                <i className="fab fa-pinterest fa-lg white-text"> </i>
                             </a>
                         </div>
                     </MDBCol>
@@ -71,7 +60,7 @@ const FooterPagePro = () => {
             <div className="footer-copyright text-center py-3">
                 <MDBContainer fluid>
                     &copy; {new Date().getFullYear()} Copyright:
-          <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+          <a href="https://github.com/Cete4/Viral_Flights"> Viral Flights </a>
                 </MDBContainer>
             </div>
         </MDBFooter>
