@@ -1,50 +1,24 @@
-import React, { useRef } from "react";
-import { useStoreContext } from "../../utils/blog/GlobalState";
-import { ADD_POST, LOADING } from "../../utils/blog/actions";
-import API from "../../utils/blog/API";
+import React from "react";
 
-function BlogPostForm() {
-    const titleRef = useRef();
-    const locationRef = useRef();
-    const bodyRef = useRef();
-    const authorRef = useRef();
-    const [state, dispatch] = useStoreContext();
+const BlogPostForm = () => {
+  const handleSubmit = e => {
+    e.preventDefault();
+  };
 
-    const handleSubmit = e => {
-        e.preventDefault();
-        dispatch({ type: LOADING });
-        API.savePost({
-            title: titleRef.current.value,
-            location: locationRef.current.value,
-            body: bodyRef.current.value,
-            author: authorRef.current.value
-        })
-            .then(result => {
-                dispatch({
-                    type: ADD_POST,
-                    post: result.data
-                });
-            })
-            .catch(err => console.log(err));
-
-        titleRef.current.value = "";
-        bodyRef.current.value = "";
-    };
-
-    return (
-        <div>
-            <h1>Create a blog post</h1>
-            <form className="form-group mt-5 mb-5" onSubmit={handleSubmit}>
-                <input className="form-control mb-5" required ref={titleRef} placeholder="Title" />
-                <input className="form-control mb-5" required ref={locationRef} placeholder="Location" />
-                <textarea className="form-control mb-5" required ref={bodyRef} placeholder="Body" />
-                <input className="form-control mb-5" ref={authorRef} placeholder="Screen name" />
-                <button className="btn btn-success mt-3 mb-5" disabled={state.loading} type="submit">
-                    Save Post
-                </button>
-            </form>
-        </div>
-    );
-}
+  return (
+    <div>
+      <h1>Create a blog post</h1>
+      <form className="form-group mt-5 mb-5" onSubmit={handleSubmit}>
+        <input className="form-control mb-5" required placeholder="Title" />
+        <input className="form-control mb-5" required placeholder="Location" />
+        <textarea className="form-control mb-5" required placeholder="Body" />
+        <input className="form-control mb-5" placeholder="Screen name" />
+        <button className="btn btn-success mt-3 mb-5" type="submit">
+          Save Post
+        </button>
+      </form>
+    </div>
+  );
+};
 
 export default BlogPostForm;

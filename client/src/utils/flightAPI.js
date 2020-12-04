@@ -27,19 +27,16 @@
 //   getFlight: function() {
 //     return axios.get("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/" + origin + "/" + destination + "/" + date);
 //   },
-<<<<<<< HEAD
   // getDogsOfBreed: function(breed) {
   //   return axios.get("https://dog.ceo/api/breed/" + breed + "/images");
   // },
   // getBaseBreedsList: function() {
   //   return axios.get("https://dog.ceo/api/breeds/list");
   // }
-=======
 //   // getDogsOfBreed: function(breed) {
 //   //   return axios.get("https://dog.ceo/api/breed/" + breed + "/images");
 //   // },
 //   // getBaseBreedsList: function() {
 //   //   return axios.get("https://dog.ceo/api/breeds/list");
 //   // }
->>>>>>> 3fcfd9e412a10d69c4c791c12137b0ca6af9cefc
 // };
