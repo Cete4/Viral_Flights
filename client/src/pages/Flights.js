@@ -18,7 +18,7 @@ class Flights extends Component {
                     </Row>
                     <Row>
                         <Col size="md-12">
-
+                            <FlightsCard />
                         </Col>
                     </Row>
                 </Container >
