@@ -6,7 +6,6 @@ import BlogPostDetail from "../components/BlogPostDetail";
 
 class TemplatePage extends Component {
 
-
     render() {
         return (
             <div>

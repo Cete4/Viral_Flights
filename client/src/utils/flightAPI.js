@@ -20,17 +20,17 @@ axios({
   })
 
 
-  import axios from "axios";
+//   import axios from "axios";
 
 
-export default {
-  getFlight: function() {
-    return axios.get("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/" + origin + "/" + destination + "/" + date);
-  },
+// export default {
+//   getFlight: function() {
+//     return axios.get("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/" + origin + "/" + destination + "/" + date);
+//   },
   // getDogsOfBreed: function(breed) {
   //   return axios.get("https://dog.ceo/api/breed/" + breed + "/images");
   // },
   // getBaseBreedsList: function() {
   //   return axios.get("https://dog.ceo/api/breeds/list");
   // }
-};
+// };
