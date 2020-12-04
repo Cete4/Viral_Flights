@@ -4,7 +4,8 @@ import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
 import FlightsCard from "../components/FlightsCard";
 import SignUpForm from "../components/SignUpForm";
-
+import Footer from "../components/Footer";
+import "./style.css"
 class SignUp extends Component {
 
     render() {
@@ -21,6 +22,13 @@ class SignUp extends Component {
                             <SignUpForm />
                         </Col>
                     </Row>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <Footer />
+                    <br></br>
                 </Container >
             </div >
         );

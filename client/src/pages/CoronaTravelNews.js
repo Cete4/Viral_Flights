@@ -4,7 +4,8 @@ import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
 import CoronaCard from "../components/CoronaCard";
 import covidAPI from "../utils/covidAPI";
-
+import Footer from "../components/Footer";
+import "./style.css"
 
 
 class CoronaTravelNews extends Component {
@@ -46,6 +47,13 @@ class CoronaTravelNews extends Component {
                             <CoronaCard />
                         </Col>
                     </Row>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <Footer />
+                    <br></br>
                 </Container >
             </div >
         );
