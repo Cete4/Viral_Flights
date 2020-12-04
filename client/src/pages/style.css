@@ -1,0 +1,26 @@
+#outer {
+  background-color: #eef3f1;
+  border-radius: 5px;
+}
+
+#Search {
+  background-color: #757b7f;
+  color: #eef3f1;
+  border-style: none;
+}
+
+#Login {
+  background-color: #706752;
+  color: #eef3f1;
+  border-style: none;
+}
+
+#Signup {
+  background-color: #615c57;
+  color: #eef3f1;
+  border-style: none;
+}
+
+#hotflights {
+  color: #eef3f1;
+}

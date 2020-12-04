@@ -4,9 +4,10 @@ import API from "../utils/flightAPI";
 import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
 import FlightsCard from "../components/FlightsCard";
+import "./style.css"
 
 class Home extends Component {
-  
+
 
 
     render() {
