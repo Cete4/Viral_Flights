@@ -4,7 +4,8 @@ import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
 import BlogPostForm from "../components/BlogPostForm";
 import BlogPostList from "../components/BlogPostList";
-
+import Footer from "../components/Footer";
+import "./style.css"
 class Blog extends Component {
 
     render() {
@@ -24,6 +25,13 @@ class Blog extends Component {
                             <BlogPostList />
                         </Col>
                     </Row>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <Footer />
+                    <br></br>
                 </Container >
             </div >
         );
