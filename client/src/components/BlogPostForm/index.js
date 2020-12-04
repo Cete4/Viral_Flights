@@ -1,6 +1,6 @@
 import React from "react";
 
-const CreatePostForm = () => {
+const BlogPostForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
   };
@@ -21,4 +21,4 @@ const CreatePostForm = () => {
   );
 };
 
-export default CreatePostForm;
+export default BlogPostForm;

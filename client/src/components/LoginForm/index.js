@@ -35,7 +35,7 @@ function LoginForm() {
                     />
                 </Form.Group>
                 <Button
-                    href="Home"
+                    // href="Home" - taken out for now
                     block size="lg"
                     type="submit"
                     disabled={!validateForm()}>

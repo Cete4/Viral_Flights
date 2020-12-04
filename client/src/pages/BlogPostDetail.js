@@ -1,11 +1,11 @@
 import React from "react";
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
 import BlogPostDetail from "../components/BlogPostDetail";
 
-class TemplatePage extends Component {
-
+class DetailPage extends Component {
 
     render() {
         return (
@@ -21,9 +21,14 @@ class TemplatePage extends Component {
                             <BlogPostDetail />
                         </Col>
                     </Row>
+                    <Row>
+                        <Col size="md-2">
+                            <Link to="/">← Back to Posts</Link>
+                        </Col>
+                    </Row>
                 </Container >
             </div >
         );
     }
 }
-export default TemplatePage;
+export default DetailPage;
