@@ -29,7 +29,6 @@ axios({
     console.log(error)
   })
 
-//   import axios from "axios";
 
 
 // export default {

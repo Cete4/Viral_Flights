@@ -5,7 +5,8 @@ import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
 // import FlightsCard from "../components/FlightsCard";
 import LoginForm from "../components/LoginForm";
-
+import Footer from "../components/Footer";
+import "./style.css"
 class Login extends Component {
 
     render() {
@@ -22,6 +23,13 @@ class Login extends Component {
                             <LoginForm />
                         </Col>
                     </Row>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <Footer />
+                    <br></br>
                 </Container >
             </div >
         );
