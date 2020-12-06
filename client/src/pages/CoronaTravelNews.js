@@ -24,8 +24,6 @@ function CoronaTravelNews() {
         covidAPI.getCovidInfo()
             .then(res =>
                 setStates(res.data),
-                console.log("This is the response: "),
-                console.log("This is the current state: "),
                 console.log(states)
             )
             .catch(err => console.log(err));
