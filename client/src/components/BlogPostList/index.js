@@ -1,10 +1,12 @@
 import React from "react";
 import { ListItem, List } from "../List";
 import { Link } from "react-router-dom";
+import { Card } from 'react-bootstrap';
 
 const PostsList = () => {
   return (
     <div>
+      <Card.Body style={{ backgroundColor: "white" }}>
       <h1>All Blog Posts</h1>
       <h3 className="mb-5 mt-5">Click on a post to view</h3>
       {/* Replace `[]` with the appropriate arrays */}
@@ -23,6 +25,7 @@ const PostsList = () => {
       ) : (
         <h3>You haven't written any posts yet!</h3>
       )}
+      </Card.Body>
     </div>
   );
 };
