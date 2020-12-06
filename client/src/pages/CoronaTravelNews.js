@@ -60,9 +60,16 @@ function CoronaTravelNews() {
                 <br></br>
                 <br></br>
                 <br></br>
-                <Footer />
                 <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <Footer />
             </Container >
+
+
         </div >
     );
 }
