@@ -1,0 +1,11 @@
+#rootCard{
+    float: left;
+    width: 13rem;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    margin-right: 3px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}

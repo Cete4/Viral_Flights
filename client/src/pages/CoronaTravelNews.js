@@ -40,6 +40,8 @@ function CoronaTravelNews() {
                         <SiteNav />
                     </Col>
                 </Row>
+                <br></br>
+                <br></br>
                 <Row>
                     {states && states.map(function (state, i) {
                         return (
