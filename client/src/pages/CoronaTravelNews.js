@@ -28,8 +28,8 @@ function CoronaTravelNews() {
             )
             .catch(err => console.log(err));
     };
-    let count = 1;
-    let cardArray = [];
+    
+    
     return (
         <div>
             <Container>
@@ -41,7 +41,7 @@ function CoronaTravelNews() {
                 <br></br>
                 <br></br>
                 <Row>
-                    {states && states.map(function (state, i) {
+                    {states && states.map(function (state) {
                         return (
                             <Col size="3">
                                 <CoronaCard
