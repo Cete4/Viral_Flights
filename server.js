@@ -4,7 +4,7 @@ const routes = require("./routes");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-const db = require("./models");
+// const db = require("./models");
 
 // configuring middleware needed for authentication
 // app.use(express.urlencoded({ extended: true }));
