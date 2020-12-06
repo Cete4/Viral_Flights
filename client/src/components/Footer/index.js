@@ -13,7 +13,7 @@ const FooterPagePro = () => {
                     </MDBCol>
                     <MDBCol md="2" className="b-3">
                         <h6 className="title font-weight-bold">
-                            <a href="#!">Github</a>
+                            <a href="https://github.com/Cete4/Viral_Flights" target="_blank">Github</a>
                         </h6>
                     </MDBCol>
                     <MDBCol md="2" className="b-3">
