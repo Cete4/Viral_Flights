@@ -59,15 +59,7 @@ function CoronaTravelNews() {
 
                 <br></br>
                 <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
+
                 <Footer />
             </Container >
 
