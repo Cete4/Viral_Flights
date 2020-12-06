@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from 'react-bootstrap';
 import "./style.css";
 
-function BookCard(props) {
+function coronaCard(props) {
     return (
         <Card style={{ width: '18rem' }}>
             {/* TODO: Add images of the destination if possible */}
@@ -18,4 +18,4 @@ function BookCard(props) {
     )
 }
 
-export default BookCard;
+export default coronaCard;
