@@ -30,9 +30,8 @@ function CoronaTravelNews() {
             )
             .catch(err => console.log(err));
     };
-
-
-
+    let count = 1;
+    let cardArray = [];
     return (
         <div>
             <Container>
@@ -42,18 +41,20 @@ function CoronaTravelNews() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col size="md-12">
-                        <CoronaCard />
-                        {states && states.map(function (state, i) {
-                            return (<CoronaCard
-                                province={state.state}
-                                date={state.date}
-                                cases={state.positive}
-                                newCases={state.positiveIncrease} />)
-                        })}
-
-                    </Col>
+                    {states && states.map(function (state, i) {
+                        return (
+                            <Col size="3">
+                                <CoronaCard
+                                    province={state.state}
+                                    date={state.date}
+                                    cases={state.positive}
+                                    newCases={state.positiveIncrease} />
+                            </Col>
+                        )
+                    })}
                 </Row>
+
+
                 <br></br>
                 <br></br>
                 <br></br>
