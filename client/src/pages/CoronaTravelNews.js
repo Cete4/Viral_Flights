@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Component } from "react";
 import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
@@ -8,55 +8,63 @@ import Footer from "../components/Footer";
 import "./style.css"
 
 
-class CoronaTravelNews extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            cards: []
-        }
-    }
+function CoronaTravelNews() {
 
-    search = query => {
+    // Setting our component's initial state
+    const [states, setStates] = useState([])
+
+    // Load all books and store them with setBooks
+    useEffect(() => {
+        loadStates()
+    }, [])
+
+    // Loads all books and sets them to books
+    function loadStates() {
         covidAPI.getCovidInfo()
             .then(res =>
-                this.setState({
-                    cards: res
-                },
-                    console.log(res),
-                    console.log(this.state)
-                ))
+                setStates(res),
+                console.log("This is the response: "),
+                console.log("This is the current state: "),
+                console.log(states)
+            )
             .catch(err => console.log(err));
     };
 
-    componentDidMount() {
-        this.search();
-    }
 
-    render() {
-        return (
-            <div>
-                <Container>
-                    <Row>
-                        <Col size="md-12">
-                            <SiteNav />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col size="md-12">
-                            <CoronaCard />
-                        </Col>
-                    </Row>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <Footer />
-                    <br></br>
-                </Container >
-            </div >
-        );
-    }
+
+    return (
+        <div>
+            <Container>
+                <Row>
+                    <Col size="md-12">
+                        <SiteNav />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col size="md-12">
+
+                        {/* {states.map(function (state, i) {
+                            return (<CoronaCard
+                                key={i}
+                                province={state.data.key.state}
+                                date={state.data.key.date}
+                                cases={state.data.key.positive}
+                                newCases={state.data.key.positiveIncrease} />)
+                        })} */}
+
+                    </Col>
+                </Row>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <Footer />
+                <br></br>
+            </Container >
+        </div >
+    );
 }
+
 export default CoronaTravelNews;
