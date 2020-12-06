@@ -14,16 +14,16 @@ function CoronaTravelNews() {
     // Setting our component's initial state
     const [states, setStates] = useState([])
 
-    // Load all books and store them with setBooks
+    // Load all states and store them with setStates
     useEffect(() => {
         loadStates()
     }, [])
 
-    // Loads all books and sets them to books
+    // Loads all states and sets them to states
     function loadStates() {
         covidAPI.getCovidInfo()
             .then(res =>
-                setStates(res),
+                setStates(res.data),
                 console.log("This is the response: "),
                 console.log("This is the current state: "),
                 console.log(states)
@@ -44,14 +44,13 @@ function CoronaTravelNews() {
                 <Row>
                     <Col size="md-12">
                         <CoronaCard />
-                        {/* {states.map(function (state, i) {
+                        {states && states.map(function (state, i) {
                             return (<CoronaCard
-                                key={i}
-                                province={state.data.key.state}
-                                date={state.data.key.date}
-                                cases={state.data.key.positive}
-                                newCases={state.data.key.positiveIncrease} />)
-                        })} */}
+                                province={state.state}
+                                date={state.date}
+                                cases={state.positive}
+                                newCases={state.positiveIncrease} />)
+                        })}
 
                     </Col>
                 </Row>
