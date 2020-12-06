@@ -24,6 +24,7 @@
     "express": "^4.16.3",
     "if-env": "^1.0.4",
     "mdbreact": "^5.0.0",
-    "mongoose": "^5.11.3"
+    "mongoose": "^5.11.3",
+    "react-fontawesome": "^1.7.1"
   }
 }

@@ -1,12 +1,27 @@
 import React from "react";
 import { RangeDatePicker } from "react-google-flight-datepicker";
+// import flightAPI from "../utils/flightAPI";
 
 function SearchForm(props) {
     return (
+        // props = flightAPI.originplace
         <div className="container">
             <form>
                 <div className="form-group row">
                     <label htmlFor="search">Search for Flights</label>
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown button</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+
+
+
                     <input
                         onChange={props.handleInputChange}
                         value={props.search}
@@ -16,8 +31,9 @@ function SearchForm(props) {
                         placeholder="Search for a Flight"
                         id="search"
                     />
-
+{/* <h1> {flightAPI.originplace} </h1> */}
                     <RangeDatePicker
+                    // props = {flightAPI.originplace}
                         startDate={new Date()}
                         endDate={new Date()}
                         onChange={(startDate, endDate) => onDateChange(startDate, endDate)}
