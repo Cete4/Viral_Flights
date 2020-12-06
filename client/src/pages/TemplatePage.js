@@ -21,6 +21,16 @@ class TemplatePage extends Component {
 
                         </Col>
                     </Row>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <Footer />
                 </Container >
             </div >
         );

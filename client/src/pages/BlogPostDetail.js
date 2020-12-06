@@ -32,8 +32,12 @@ class DetailPage extends Component {
                     <br></br>
                     <br></br>
                     <br></br>
-                    <Footer />
                     <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    <Footer />
                 </Container >
             </div >
         );

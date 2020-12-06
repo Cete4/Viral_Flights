@@ -3,7 +3,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 const FooterPagePro = () => {
     return (
-        <MDBFooter color="indigo" id="footer" className="font-small pt-0">
+        <MDBFooter color="transparent" id="footer" className="font-small pt-0">
             <MDBContainer>
                 <MDBRow className="pt-5 mb-3 text-center d-flex justify-content-center">
                     <MDBCol md="2" className="b-3">
@@ -13,22 +13,17 @@ const FooterPagePro = () => {
                     </MDBCol>
                     <MDBCol md="2" className="b-3">
                         <h6 className="title font-weight-bold">
-                            <a href="#!">Github</a>
+                            <a href="https://github.com/Cete4/Viral_Flights" target="_blank">Github</a>
                         </h6>
                     </MDBCol>
                     <MDBCol md="2" className="b-3">
                         <h6 className="title font-weight-bold">
-                            <a href="#!">Awards</a>
+                            <a href="https://github.com/Cete4/Viral_Flights/blob/main/README.md" target="_blank">Help</a>
                         </h6>
                     </MDBCol>
                     <MDBCol md="2" className="b-3">
                         <h6 className="title font-weight-bold">
-                            <a href="#!">Help</a>
-                        </h6>
-                    </MDBCol>
-                    <MDBCol md="2" className="b-3">
-                        <h6 className="title font-weight-bold">
-                            <a href="#!">Contact</a>
+                            <a href="Contact">Contact</a>
                         </h6>
                     </MDBCol>
                 </MDBRow>
@@ -36,8 +31,7 @@ const FooterPagePro = () => {
                 <MDBRow className="d-flex text-center justify-content-center mb-md-0 mb-4">
                     <MDBCol md="8" sm="12" className="mt-5">
                         <p style={{ lineHeight: "1.7rem" }}>
-                            A fast way to look at flighs and compare them with current events.
-            </p>
+                            A fast way to look at flighs and compare them with current events.</p>
                     </MDBCol>
                 </MDBRow>
                 <hr className="clearfix d-md-none rgba-white-light" style={{ margin: "10% 15% 5%" }} />

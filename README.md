@@ -17,10 +17,10 @@ Repository: https://github.com/Cete4/Viral_Flights
 * [License](#license)
 
 # Development
-## Team Members
-* Micah BigEagle
-* Ray Gordon
-* Charline Lach
+## Project Team
+* [Micah BigEagle](https://github.com/Cete4)
+* [Ray Gordon](https://github.com/rjgordon26)
+* [Charline Lach](https://github.com/charlinelach)
 
 ## Usage Instructions
 To utilize this website/application, end users may access it via the [Heroku link](https://viralflights.herokuapp.com/). 

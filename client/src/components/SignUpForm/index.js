@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { Card } from 'react-bootstrap';
 
 function SignUpForm(props) {
     const [email, setEmail] = useState("");
@@ -16,25 +17,26 @@ function SignUpForm(props) {
 
     return (
         <div className="Login">
-            <Form onSubmit={handleSubmit}>
-                <Form.Group size="lg" controlId="email">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control
-                        autoFocus
-                        type="email"
-                        value={props.email}
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
-                </Form.Group>
-                <Form.Group size="lg" controlId="password">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control
-                        type="password"
-                        value={props.password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
-                </Form.Group>
-                {/* <Form.Group size="lg" controlId="password">
+            <Card.Body style={{ backgroundColor: "white" }}>
+                <Form onSubmit={handleSubmit}>
+                    <Form.Group size="lg" controlId="email">
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control
+                            autoFocus
+                            type="email"
+                            value={props.email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                    </Form.Group>
+                    <Form.Group size="lg" controlId="password">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control
+                            type="password"
+                            value={props.password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+                    </Form.Group>
+                    {/* <Form.Group size="lg" controlId="password">
                     <Form.Label>Confirm Password</Form.Label>
                     <Form.Control
                         type="password"
@@ -42,14 +44,15 @@ function SignUpForm(props) {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </Form.Group> */}
-                <Button
-                    // href="Home" - taken out for now
-                    block size="lg"
-                    type="submit"
-                    disabled={!validateForm()}>
-                    Sign Up
+                    <Button
+                        // href="Home" - taken out for now
+                        block size="lg"
+                        type="submit"
+                        disabled={!validateForm()}>
+                        Sign Up
                 </Button>
-            </Form>
+                </Form>
+            </Card.Body>
         </div>
     );
 }

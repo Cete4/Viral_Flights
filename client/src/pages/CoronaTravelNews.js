@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Component } from "react";
 import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
@@ -8,55 +8,62 @@ import Footer from "../components/Footer";
 import "./style.css"
 
 
-class CoronaTravelNews extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            cards: []
-        }
-    }
+function CoronaTravelNews() {
 
-    search = query => {
+    // Setting our component's initial state
+    const [states, setStates] = useState([])
+
+    // Load all states and store them with setStates
+    useEffect(() => {
+        loadStates()
+    }, [])
+
+    // Loads all states and sets them to states
+    function loadStates() {
         covidAPI.getCovidInfo()
             .then(res =>
-                this.setState({
-                    cards: res
-                },
-                    console.log(res),
-                    console.log(this.state)
-                ))
+                setStates(res.data),
+                console.log(states)
+            )
             .catch(err => console.log(err));
     };
+    let count = 1;
+    let cardArray = [];
+    return (
+        <div>
+            <Container>
+                <Row>
+                    <Col size="md-12">
+                        <SiteNav />
+                    </Col>
+                </Row>
+                <br></br>
+                <br></br>
+                <Row>
+                    {states && states.map(function (state, i) {
+                        return (
+                            <Col size="3">
+                                <CoronaCard
+                                    province={state.state}
+                                    date={state.date}
+                                    cases={state.positive}
+                                    newCases={state.positiveIncrease} />
+                            </Col>
+                        )
+                    })}
+                </Row>
 
-    componentDidMount() {
-        this.search();
-    }
 
-    render() {
-        return (
-            <div>
-                <Container>
-                    <Row>
-                        <Col size="md-12">
-                            <SiteNav />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col size="md-12">
-                            <CoronaCard />
-                        </Col>
-                    </Row>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <Footer />
-                    <br></br>
-                </Container >
-            </div >
-        );
-    }
+                <br></br>
+                <br></br>
+
+                <Footer />
+            </Container >
+
+
+        </div >
+    );
 }
+
 export default CoronaTravelNews;
