@@ -9,7 +9,7 @@ const outboundpartialdate = "anytime"; // “yyyy-mm-dd”
 
 axios({
   "method": "GET",
-  "url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/"+country+"/"+currency+"/"+locale+"/"+originplace+"/"+destinationplace+"/"+outboundpartialdate,
+  "url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/" + country + "/" + currency + "/" + locale + "/" + originplace + "/" + destinationplace + "/" + outboundpartialdate,
   // "url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/SFO-sky/JFK-sky/anytime",
   // "url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/any/any/anytime",
   // "url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/"+originplace+"/JFK-sky/anytime",
