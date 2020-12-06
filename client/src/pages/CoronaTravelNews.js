@@ -43,7 +43,7 @@ function CoronaTravelNews() {
                 </Row>
                 <Row>
                     <Col size="md-12">
-
+                        <CoronaCard />
                         {/* {states.map(function (state, i) {
                             return (<CoronaCard
                                 key={i}
