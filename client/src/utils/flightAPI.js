@@ -4,13 +4,14 @@ const axios = require("axios");
 const country = "US";
 const currency = "USD";
 const locale = "en-US";
-const originplace = "SFO";
+const originPlace = "SFO";
 const destinationplace = "JFK";
 const outboundpartialdate = "anytime"; // “yyyy-mm-dd”
 
-axios({
+const getFlightData = function() {
+  return axios({
   "method": "GET",
-  "url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/" + country + "/" + currency + "/" + locale + "/" + originplace + "/" + destinationplace + "/" + outboundpartialdate,
+  "url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/" + country + "/" + currency + "/" + locale + "/" + originPlace + "/" + destinationplace + "/" + outboundpartialdate,
   // "url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/SFO-sky/JFK-sky/anytime",
   // "url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/any/any/anytime",
   // "url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/"+originplace+"/JFK-sky/anytime",
@@ -23,15 +24,15 @@ axios({
     "inboundpartialdate": "2019-12-01",
   }
 })
-  .then((response) => {
-    console.log(response.data)
-  })
-  .catch((error) => {
-    console.log(error)
-  })
+  // .then((response) => {
+  //   console.log(response.data)
+  // })
+  // .catch((error) => {
+  //   console.log(error)
+  // })
+}
 
-
-
+export default getFlightData;
   // import axios from 'axios'
 // const instance = axios.create({
 //     baseURL: "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/" + country + "/" + currency + "/" + locale + "/" + originplace + "/" + destinationplace + "/" + outboundpartialdate,
@@ -112,4 +113,3 @@ axios({
 // 	console.log(err);
 // });
 
-// var originplace = "SFO-sky"

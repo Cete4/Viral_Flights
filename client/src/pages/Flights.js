@@ -23,7 +23,7 @@ class Flights extends Component {
                             <FlightsCard />
                         </Col>
                     </Row>
-                    {/* <h1> {flightAPI.axios} Some text </h1> */}
+                    {/* <h1> {flightAPI.originPlace} Some text </h1> */}
                     <br></br>
                     <br></br>
                     <br></br>
