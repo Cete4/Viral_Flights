@@ -8,11 +8,13 @@ import "./style.css"
 function Home() {
     // Setting our component's initial state
     const [flights, setFlights] = useState([])
+    const origin = "SFO";
+    const destination = "MSP";
 
     // Load all states and store them with setStates
     useEffect(() => {
         function f() {
-            const data = flightAPI().then(response => {
+            const data = flightAPI(origin, destination).then(response => {
                 console.log(response.data.Quotes);
                 setFlights(response.data.Quotes);
             }).catch((error) => {
@@ -41,6 +43,8 @@ function Home() {
                         return (
                             <Col size="3">
                                 <FlightsCard
+                                    origin={origin}
+                                    destination={destination}
                                     cost={flight.MinPrice}
                                     direct={flight.Direct}
                                 />
