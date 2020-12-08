@@ -46,7 +46,7 @@ function Home() {
                         <FlightsCard />
                     </Col>
                 </Row>
-                <Row>
+                {/* <Row>
                     {flights && flights.map(function (flight) {
                         return (
                             <Col size="3">
@@ -54,7 +54,7 @@ function Home() {
                             </Col>
                         )
                     })}
-                </Row>
+                </Row> */}
                 <br></br>
                 <br></br>
                 <br></br>
