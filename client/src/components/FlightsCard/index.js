@@ -6,9 +6,9 @@ import "./style.css";
 function BookCard(props) {
     let str = "";
     if (props.direct === true) {
-        str = "True";
+        str = "Direct Flight";
     } else {
-        str = "False";
+        str = "Some Stops";
     }
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
