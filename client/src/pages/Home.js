@@ -34,14 +34,16 @@ function Home() {
                 <Row>
                     <Col size="md-12">
                         <h1 id="hotflights">Hot Flights</h1>
-                        <FlightsCard />
                     </Col>
                 </Row>
                 {<Row>
                     {flights && flights.map(function (flight) {
                         return (
                             <Col size="3">
-                                <FlightsCard />
+                                <FlightsCard
+                                    cost={flight.MinPrice}
+                                    direct={flight.Direct}
+                                />
                             </Col>
                         )
                     })}
