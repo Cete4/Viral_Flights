@@ -54,7 +54,7 @@ function Blog() {
                 title: formObject.title,
                 location: formObject.location,
                 author: formObject.author,
-                blogPost: formObject.synopsis
+                blogPost: formObject.blogPost
             })
                 .then(res => loadBlogs())
                 .catch(err => console.log(err));
@@ -100,7 +100,7 @@ function Blog() {
                                 onClick={handleFormSubmit}
                             >
                                 Submit Post
-                </FormBtn>
+                            </FormBtn>
                         </form>
                     </Col>
                     <Col size="md-6 sm-12">
