@@ -18,7 +18,7 @@ function App() {
           <Route exact path='/Flights' component={Flights} />
           <Route exact path='/CoronaTravelNews' component={CoronaTravelNews} />
           <Route exact path='/Blog' component={Blog} />
-          <Route exact path='/BlogPostDetail' component={BlogPostDetail} />
+          <Route exact path='/blogs/:id' component={BlogPostDetail} />
           <Route exact path='/Login' component={Login} />
           <Route exact path='/SignUp' component={SignUp} />
         </Switch>
