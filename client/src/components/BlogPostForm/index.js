@@ -39,6 +39,7 @@
 //     setFormObject({ ...formObject, [name]: value })
 //   };
 
+<<<<<<< HEAD
 //   // When the form is submitted, use the API.saveBook method to save the book data
 //   // Then reload books from the database
 //   function handleFormSubmit(event) {
@@ -54,6 +55,24 @@
 //         .catch(err => console.log(err));
 //     }
 //   };
+=======
+  // When the form is submitted, use the API.saveBook method to save the book data
+  // Then reload books from the database
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    if (formObject.title && formObject.location && formObject.author) {
+      API.saveBlog({
+        title: formObject.title,
+        location: formObject.location,
+        author: formObject.author,
+        blogPost: formObject.blogPost
+      })
+        .then(res => loadBlogs())
+        .catch(err => console.log(err))
+        windows.alert("Your blog post has submitted!");
+    }
+  };
+>>>>>>> 03318774a81859da223a7b1d9602a99dbd2a2e2b
 
 //   return (
 //     <Container fluid>
