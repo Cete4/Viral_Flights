@@ -5,6 +5,7 @@ import SiteNav from "../components/SiteNav";
 import FlightsCard from "../components/FlightsCard";
 import Footer from "../components/Footer";
 import "./style.css"
+// import flightAPI from "../utils/flightAPI";
 class Flights extends Component {
 
 
@@ -22,6 +23,7 @@ class Flights extends Component {
                             <FlightsCard />
                         </Col>
                     </Row>
+                    {/* <h1> {flightAPI.originPlace} Some text </h1> */}
                     <br></br>
                     <br></br>
                     <br></br>
