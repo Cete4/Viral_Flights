@@ -4,11 +4,9 @@ const axios = require("axios");
 const country = "US";
 const currency = "USD";
 const locale = "en-US";
-const originPlace = "SFO";
-const destinationplace = "JFK";
 const outboundpartialdate = "anytime"; // “yyyy-mm-dd”
 
-const getFlightData = function() {
+const getFlightData = function(originPlace, destinationplace) {
   return axios({
   "method": "GET",
   "url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/" + country + "/" + currency + "/" + locale + "/" + originPlace + "/" + destinationplace + "/" + outboundpartialdate,
