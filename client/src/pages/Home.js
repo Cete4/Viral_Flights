@@ -8,8 +8,8 @@ import "./style.css"
 function Home() {
     // Setting our component's initial state
     const [flights, setFlights] = useState([])
-    const origin = "SFO";
-    const destination = "MSP";
+    const origin = "MSP";
+    const destination = "SFO";
 
     // Load all states and store them with setStates
     useEffect(() => {
@@ -34,7 +34,7 @@ function Home() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col size="md-12">
+                    <Col size="auto">
                         <h1 id="hotflights">Hot Flights</h1>
                     </Col>
                 </Row>
