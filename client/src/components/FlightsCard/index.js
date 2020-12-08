@@ -10,8 +10,8 @@ function BookCard(props) {
             {/* <Card.Img variant="left" src={props.src} /> */}
             <Card.Body>
                 <Card.Title>Flight: {props.destination}</Card.Title>
-                <Card.Text id="heavy">Cost: <p>{props.cost}</p></Card.Text>
-                <Card.Text id="heavy">Date: <p>{props.Date}</p></Card.Text>
+                <Card.Text id="heavy">Cost: {props.cost}</Card.Text>
+                <Card.Text id="heavy">Date: {props.Date}</Card.Text>
                 <Card.Text id="heavy">Link: <a href={props.link} target={"_blank"} rel="noopener noreferrer">{props.link}</a></Card.Text>
                 <Card.Text>{props.description}</Card.Text>
             </Card.Body>
