@@ -56,7 +56,7 @@ function Blog() {
             })
                 .then(res => loadBlogs())
                 .catch(err => console.log(err))
-            window.alert("Your blog has been posted!");
+                window.alert("Your blog has been posted!");
         }
     };
 
