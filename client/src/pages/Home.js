@@ -8,6 +8,7 @@ import "./style.css"
 function Home() {
     // Setting our component's initial state
     const [flights, setFlights] = useState([])
+    //Defaults for the time being
     const origin = "MSP";
     const destination = "SFO";
 
