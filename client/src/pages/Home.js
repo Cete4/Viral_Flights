@@ -8,30 +8,21 @@ import "./style.css"
 function Home() {
     // Setting our component's initial state
     const [flights, setFlights] = useState([])
+
     // Load all states and store them with setStates
     useEffect(() => {
         function f() {
             const data = flightAPI().then(response => {
-                console.log(response);
-                setFlights(response.data);
+                console.log(response.data.Quotes);
+                setFlights(response.data.Quotes);
             }).catch((error) => {
-                  console.log(error)
-                })
+                console.log(error)
+            })
 
         }
         f();
-        console.log(flights)
     }, [])
-    // Loads all flights and sets them to flights
-    function loadFlights() {
-        // flightAPI.getFlightData()
-        //     .then(response =>
-        //         setFlights(response),
-        //         console.log("This is the state"),
-        //         console.log(flights)
-        //     )
-        //     .catch(err => console.log(err));
-    };
+
     return (
         <div>
             <Container>
@@ -46,7 +37,7 @@ function Home() {
                         <FlightsCard />
                     </Col>
                 </Row>
-                <Row>
+                {<Row>
                     {flights && flights.map(function (flight) {
                         return (
                             <Col size="3">
@@ -54,7 +45,7 @@ function Home() {
                             </Col>
                         )
                     })}
-                </Row>
+                </Row>}
                 <br></br>
                 <br></br>
                 <br></br>
