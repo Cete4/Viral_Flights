@@ -1,7 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
 # Viral Flights
-<!-- Description -->
+The purpose of this application is to view flights in and COVID status across the US. Users will also be able to read/write blog posts about travel.
 
 **First Presentation**: `2020 December 09`
 <br>
@@ -33,17 +33,18 @@ To utilize this website/application, end users may access it via the [Heroku lin
 
 ## Installation
 ```
-Axios: npm i axios
-Bootstrap: npm i bootstrap
-Express: npm i express
-Google Flight Date Picker: npm i react-google-flight-datepicker
+npm i
 ```
 
 ## Testing
-
+```
+npm start
+```
 
 ## Credits & Thank Yous
-<!-- Thank you to our Instructor, TAs, and classmates! -->
+Thank you to our Instructor, TAs, and classmates!
+<br>
+Major shout out to Josh for his aid!
 
 # License Information
 MIT License
