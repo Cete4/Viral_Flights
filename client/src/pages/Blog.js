@@ -45,8 +45,6 @@ function Blog() {
         setFormObject({ ...formObject, [name]: value })
     };
 
-    // When the form is submitted, use the API.saveBook method to save the book data
-    // Then reload books from the database
     function handleFormSubmit(event) {
         event.preventDefault();
         if (formObject.title && formObject.location && formObject.author) {
@@ -57,7 +55,8 @@ function Blog() {
                 blogPost: formObject.blogPost
             })
                 .then(res => loadBlogs())
-                .catch(err => console.log(err));
+                .catch(err => console.log(err))
+            window.alert("Your blog has been posted!");
         }
     };
 
@@ -92,11 +91,11 @@ function Blog() {
                             />
                             <TextArea
                                 onChange={handleInputChange}
-                                name="blogpost"
+                                name="blogPost"
                                 placeholder="Blog Post (optional)"
                             />
                             <FormBtn
-                                disabled={!(formObject.author && formObject.location)}
+                                disabled={!(formObject.author && formObject.location && formObject.title)}
                                 onClick={handleFormSubmit}
                             >
                                 Submit Post
