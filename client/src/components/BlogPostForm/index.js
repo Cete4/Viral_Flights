@@ -48,10 +48,11 @@ function BlogPostForm() {
         title: formObject.title,
         location: formObject.location,
         author: formObject.author,
-        blogPost: formObject.synopsis
+        blogPost: formObject.blogPost
       })
         .then(res => loadBlogs())
-        .catch(err => console.log(err));
+        .catch(err => console.log(err))
+        windows.alert("Your blog post has submitted!");
     }
   };
 
