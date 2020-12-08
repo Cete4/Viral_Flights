@@ -5,7 +5,7 @@ import "./style.css";
 
 function BookCard(props) {
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '13rem' }}>
             {/* TODO: Add images of the destination if possible */}
             {/* <Card.Img variant="left" src={props.src} /> */}
             <Card.Body>
