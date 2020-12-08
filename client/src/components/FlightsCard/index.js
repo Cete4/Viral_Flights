@@ -21,10 +21,10 @@ function BookCard(props) {
             {/* TODO: Add images of the destination if possible */}
             {/* <Card.Img variant="left" src={props.src} /> */}
             <Card.Body>
-                <Card.Title>Flight: {props.destination}</Card.Title>
+                <Card.Title>Flight: {props.origin} --&gt; {props.destination}</Card.Title>
                 <Card.Text id="heavy">Cost: ${props.cost}</Card.Text>
                 <Card.Text id="heavy">Date: {today}</Card.Text>
-                <Card.Text id="heavy">Direct Flight: {str}</Card.Text>
+                <Card.Text id="heavy">Flight Type: {str}</Card.Text>
                 <Card.Text>{props.description}</Card.Text>
             </Card.Body>
         </Card>
