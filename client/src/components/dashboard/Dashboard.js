@@ -19,7 +19,7 @@ class Dashboard extends Component {
         <div className="row">
           <div className="landing-copy col s12 center-align">
             <h4>
-              <b className="flow-text grey-text text-darken-1"> Hey there, {user.name.split(" ")[0]} </b>
+              <b className="flow-text grey-text text-darken-1"> Hey there, user! </b>
               <p className="flow-text grey-text text-darken-1">
                 You are logged into Viral Flights!
               </p>
