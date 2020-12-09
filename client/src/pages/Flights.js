@@ -45,7 +45,7 @@ function Home() {
 
                 <Row>
                     <Col size="6">
-                        <DropdownButton id="dropdown-item-button" title="Select State">
+                        <DropdownButton id="dropdown-item-button" title="Select City">
                             <Dropdown.Item as="button" value="BHM" onclick="">Birmingham</Dropdown.Item>
                             <Dropdown.Item as="button" value="ANC">Anchorage</Dropdown.Item>
                             <Dropdown.Item as="button" value="JNU" onclick="">Juneau</Dropdown.Item>
@@ -89,7 +89,7 @@ function Home() {
                         </DropdownButton>
                     </Col>
                     <Col size="6">
-                        <DropdownButton id="dropdown-item-button" title="Select State">
+                        <DropdownButton id="dropdown-item-button" title="Select City">
                             <Dropdown.Item as="button" value="BHM" onclick="">Birmingham</Dropdown.Item>
                             <Dropdown.Item as="button" value="ANC">Anchorage</Dropdown.Item>
                             <Dropdown.Item as="button" value="JNU" onclick="">Juneau</Dropdown.Item>
