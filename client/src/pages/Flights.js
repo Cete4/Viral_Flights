@@ -1,44 +1,70 @@
-import React from "react";
-import { Component } from "react";
+import React, { useState, useEffect } from "react";
+import flightAPI from "../utils/flightAPI";
 import { Col, Row, Container } from "../components/Grid";
 import SiteNav from "../components/SiteNav";
 import FlightsCard from "../components/FlightsCard";
 import Footer from "../components/Footer";
 import "./style.css"
-// import flightAPI from "../utils/flightAPI";
-class Flights extends Component {
+function Home() {
+    // Setting our component's initial state
+    const [flights, setFlights] = useState([])
+    //Defaults for the time being
+    const origin = "MSP";
+    const destination = "SFO";
 
+    // Load all states and store them with setStates
+    useEffect(() => {
+        function f() {
+            const data = flightAPI(origin, destination).then(response => {
+                console.log(response.data.Quotes);
+                setFlights(response.data.Quotes);
+            }).catch((error) => {
+                console.log(error)
+            })
 
-    render() {
-        return (
-            <div>
-                <Container>
-                    <Row>
-                        <Col size="md-12">
-                            <SiteNav />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col size="md-12">
-                            <FlightsCard />
-                        </Col>
-                    </Row>
-                    {/* <h1> {flightAPI.originPlace} Some text </h1> */}
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <Footer />
-                </Container >
-            </div >
-        );
-    }
+        }
+        f();
+    }, [])
+
+    return (
+        <div>
+            <Container>
+                <Row>
+                    <Col size="md-12">
+                        <SiteNav />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col size="auto">
+                        <h1 id="hotflights">Hot Flights</h1>
+                    </Col>
+                </Row>
+                {<Row>
+                    {flights && flights.map(function (flight) {
+                        return (
+                            <Col size="3">
+                                <FlightsCard
+                                    origin={origin}
+                                    destination={destination}
+                                    cost={flight.MinPrice}
+                                    direct={flight.Direct}
+                                />
+                            </Col>
+                        )
+                    })}
+                </Row>}
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <Footer />
+            </Container >
+        </div >
+    );
 }
-export default Flights;
+export default Home;
