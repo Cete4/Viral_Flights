@@ -26,10 +26,11 @@ Repository: https://github.com/Cete4/Viral_Flights
 To utilize this website/application, end users may access it via the [Heroku link](https://viralflights.herokuapp.com/). 
 <br>
 
-<!-- ![GIF](.gif)
+![Flights](/images/flight.png)
 <br>
-
-<br> -->
+![COVID Travel News](/images/covid.png)
+<br>
+![Blog](/images/blog.png)
 
 ## Installation
 ```
@@ -44,7 +45,13 @@ npm start
 ## Credits & Thank Yous
 Thank you to our Instructor, TAs, and classmates!
 <br>
-Major shout out to Josh for his aid!
+MAJOR SHOUT OUT to the Cart Croc team and their assistance!
+
+## Potential Future Developments
+* Improved COVID API find/use
+* Consider future common illnesses for use
+* More detailed cards when searching for flights
+* Increase the flights to be worldwide and not limited to the US.
 
 # License Information
 MIT License
