@@ -11,13 +11,13 @@ function SiteNav() {
                     <Nav.Link href="CoronaTravelNews">Corona Travel News</Nav.Link>
                     <Nav.Link href="Blog">Blog</Nav.Link>
                 </Nav>
-                <Form inline>
+                {/* <Form inline>
                     <FormControl type="text" placeholder="Search for Flights" className="mr-sm-2" />
                     <Button variant="outline-info" id="Search">Search</Button>
                 </Form>
                 <Button variant="outline-info" href="Login" id="Login">Login</Button>
                 <br></br>
-                <Button variant="outline-info" href="SignUp" id="Signup">Signup</Button>
+                <Button variant="outline-info" href="SignUp" id="Signup">Signup</Button> */}
             </Navbar>
         </div>
     );
